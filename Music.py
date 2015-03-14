@@ -50,8 +50,6 @@ def handle(text, mic, profile):
     
 def isValid(text):
     """
-        Returns True if the input is related to the meaning of life.
-
         Arguments:
         text -- user-input, typically transcribed speech
     """
