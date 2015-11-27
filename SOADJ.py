@@ -10,7 +10,7 @@ import time
 
 WORDS = ["ORDER"]
 
-dir = "/home/pi/Files"  # inserire qui la cartella da riordinare
+dir = "/home/pi/Files"  # directory
 
 def documents():
     fil_ext = ['txt','pdf','odt','ods','odp','odb','doc','docx','csv','sgml','rtf','xls']
@@ -82,7 +82,7 @@ def handle(text, mic, profile):
     """
 
     mic.say("Cleaning started...")
-    time.sleep(3)
+    time.sleep(3) # actually not for the lulz - had issues without it idk
 
     os.chdir(dir)
     downloads()
